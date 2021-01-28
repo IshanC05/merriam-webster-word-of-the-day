@@ -1,0 +1,1 @@
+# merriam-webster-word-of-the-day
