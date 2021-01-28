@@ -1,0 +1,2 @@
+"Path-where-python-is-installed\python.exe" "Path-where-both-the-files-are-stored\GUI.py"
+pause
