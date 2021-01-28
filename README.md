@@ -21,3 +21,11 @@ Here is a screenshot of the output.
 Here is screenshot of the word.txt created (and updated everytime you run the GUI.py).
 
 ![](images/word-file-screenshot.png)
+
+## Scheduling
+
+If you wish to schedule this script to run everyday, there is a Scheduler.txt file included. Just edit the path in the file and save it as a .bat file.
+
+Here is a link to help you further - https://datatofish.com/python-script-windows-scheduler/
+
+Happy Learning!
