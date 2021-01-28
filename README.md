@@ -20,7 +20,7 @@ Here is a screenshot of the output.
 
 Here is screenshot of the word.txt created (and updated everytime you run the GUI.py).
 
-
+![](images/word-file.png)
 
 ## Scheduling
 
