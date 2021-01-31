@@ -7,7 +7,7 @@ from word_scraper import today_s_word
 #Creating a window
 window = tk.Tk()
 
-#Giving the window a title
+#Title for the window
 window.title("Word of the Day")
 
 
@@ -23,7 +23,7 @@ disp = tk.Label(text = whole_word)
 d = date.today()
 
 #Stiching together everything to be saved in a file
-word_stiched_together = str(d) + ',' + word + ',' + meaning + ',' + type_x + ',' + "\n" 
+word_stiched_together = word + ',' + meaning + ',' + type_x + ',' + "\n" 
 
 #Following function checks if file exists in the path or not
 def file_exists_or_not(file_path):
@@ -43,8 +43,8 @@ def string_to_be_searched(file_name, string_to_search):
         with open(file_name, 'r' ) as read_obj:
             for line in read_obj:
                 if string_to_search in line:
-                    x = line.split(',')
-                    #print("You already came across this word on", x[0] + '.')
+                    date_appended = line.split(',')
+                    #print("You already came across this word on", date_appended[0] + '.')
                     return None
         return 1
     else:
@@ -55,6 +55,8 @@ file_path = 'Path-where-you-want-the-file-to-be-created\word.txt'
 
 out = string_to_be_searched(file_path, word_stiched_together)
 
+#Updating the word to be appended to the file with the date
+word_stiched_together = str(d) + ',' + word + ',' + meaning + ',' + type_x + ',' + "\n" 
 if out == 0:
     with open(file_path, 'a') as f:
         #print('Creating a new file and writing to it')
