@@ -5,7 +5,7 @@ Just automate it.
 For this project, I did some web scraping using BeautifulSoup.
 Then, I have created a GUI using Tkinter and the words that are scraped everyday are stored in a .txt file in case you want to backtrack.
 
-Libraries required-
+Dependencies required-
 1. Requests
 2. BeautifulSoup
 
