@@ -51,7 +51,7 @@ def string_to_be_searched(file_name, string_to_search):
         #print("File does not exist. Creating a new one and appending the word to it.")
         return 0
     
-file_path = 'Path-where-you-want-the-file-to-be-created\word.txt'
+file_path = 'C:/Users/Username/Desktop/Word/merriam-webster-word-of-the-day/word.txt'
 
 out = string_to_be_searched(file_path, word_stiched_together)
 
