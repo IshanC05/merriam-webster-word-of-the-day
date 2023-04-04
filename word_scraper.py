@@ -11,6 +11,6 @@ def today_s_word():
     soup = BeautifulSoup(r.content, 'html.parser')
     word = soup.h2.text
     meaning = soup.find('p').get_text()
-    typexx = soup.select_one('span[class^="main-attr"]').text
+    type_of_word = soup.select_one('span[class^="main-attr"]').text
     pronounciation = soup.select_one('span[class^="word-syllables"]').text
-    return word.title(), meaning, pronounciation, typexx
+    return word.title(), meaning, pronounciation, type_of_word
